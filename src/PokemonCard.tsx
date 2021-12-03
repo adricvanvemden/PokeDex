@@ -1,7 +1,6 @@
 import axios, { Canceler } from 'axios';
 import React, { FC, useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
-import {IPokemonDetails} from './interfaces'
 
 
 const PokemonCard: FC<{name: string, url: string}> = (props) =>{
