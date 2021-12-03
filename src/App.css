@@ -1,38 +1,145 @@
+body {
+  background-color: #a1b5f5;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pokemon-list {
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: black;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pokemon-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 225px;
+  margin: 20px;
+  border-radius: 5%;
+}
+
+.card-name {
+  width: 100%;
+  background-color: lightgray;
+  font-size: large;
+  font-weight: 600;
+}
+
+.card-index {
+  font-size: medium;
+  color: lightgrey;
+}
+
+.pokemon-details {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 600px;
+  height: 700px;
+  margin: auto;
+  border-radius: 5%;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 650px) {
+  .pokemon-details {
+    width: 90vw;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-details {
+  height: 200px;
+  width: 200px;
+}
+
+.flex {
+  display: flex;
+}
+
+.details-stats {
+  display: grid;
+  grid-template-columns: 150px 200px;
+  column-gap: 10px;
+  text-align: right;
+}
+
+.normal {
+  background-color: #a8a77a;
+}
+.fire {
+  background-color: #ee8130;
+}
+.water {
+  background-color: #6390f0;
+}
+.electric {
+  background-color: #f7d02c;
+}
+.grass {
+  background-color: #7ac74c;
+}
+.ice {
+  background-color: #96d9d6;
+}
+.fighting {
+  background-color: #c22e28;
+}
+.poison {
+  background-color: #a33ea1;
+}
+.ground {
+  background-color: #e2bf65;
+}
+.flying {
+  background-color: #a98ff3;
+}
+.psychic {
+  background-color: #f95587;
+}
+.bug {
+  background-color: #a6b91a;
+}
+.rock {
+  background-color: #b6a136;
+}
+.ghost {
+  background-color: #735797;
+}
+.dragon {
+  background-color: #6f35fc;
+}
+.dark {
+  background-color: #705746;
+}
+.steel {
+  background-color: #b7b7ce;
+}
+.fairy {
+  background-color: #d685ad;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  border-radius: 0.12em;
+  transition: all 0.2s;
+  margin-bottom: 10px;
+  width: 100px;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: black;
 }
